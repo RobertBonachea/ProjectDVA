@@ -1,0 +1,59 @@
+﻿
+
+<!-- Header Top Bar -->
+<div class="top-bar">
+    
+        <div class="container">
+            <div class="pull-left">
+            </div>
+            <div class="pull-right">
+                
+                
+            </div>
+        </div>
+</div>
+<!-- /Header Top Bar -->
+<!-- Main Header -->
+<div class="main-header">
+    <div class="container">
+        <!-- TopNav -->
+        <div class="topnav navbar-header">
+           
+        </div>
+        <!-- /TopNav-->
+        <!-- Logo -->
+        <div class="logo pull-left">
+            <h1>
+                <a href="/">
+                    Demographics Data Manager
+                </a>
+            </h1>
+        </div>
+        <!-- /Logo -->
+        <!-- Mobile Menu -->
+        <div class="mobile navbar-header">
+            <a class="navbar-toggle" data-toggle="collapse" href=".navbar-collapse">
+                <i class="fa fa-bars fa-2x"></i>
+            </a>
+        </div>
+        <!-- /Mobile Menu -->
+        <!-- Menu Start -->
+        <nav class="collapse navbar-collapse menu">
+            <ul class="nav navbar-nav sf-menu">
+                <li>
+                    <a href="@Url.Action("Index", "Home")" id="@(ViewContext.RouteData.Values["Action"].ToString() == "Index" && ViewContext.RouteData.Values["Controller"].ToString() == "Home" ? "current" : "")"><span class="sf-with-ul">Home</span></a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Create", "Person")" id="@(ViewContext.RouteData.Values["Action"].ToString() == "Create" ? "current" : "")"><span class="sf-with-ul">Add New Demographic</span></a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Index", "Person")" id="@(ViewContext.RouteData.Values["Action"].ToString() == "Index" && ViewContext.RouteData.Values["Controller"].ToString() == "Person" ? "current" : "")"><span class="sf-with-ul">View Demographics</span></a>
+
+                </li>
+
+            </ul>
+        </nav>
+        <!-- /Menu -->
+    </div>
+</div>
+<!-- /Main Header -->

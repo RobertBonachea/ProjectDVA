@@ -1,0 +1,53 @@
+﻿@model Domain.Entities.Person
+
+@{
+    ViewBag.Title = "Edit Demographic Data";
+}
+
+
+
+
+
+<div class="breadcrumb-wrapper">
+    <div class="pattern-overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <h2 class="title">Edit Demographic Information</h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content margin-top20 margin-bottom20">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 wow fadeIn">
+
+
+
+
+
+                @using (Html.BeginForm())
+                {
+                    @Html.HiddenFor(model => model.PersonId)
+                    @Html.HiddenFor(model => model.Address.AddressId)
+
+                    @Html.AntiForgeryToken()
+
+                    @Html.Partial("_ValidationSummary", ViewData.ModelState);
+
+                    @Html.Partial("_Profile")
+
+
+
+
+                }
+
+
+            </div>
+        </div>
+    </div>
+</div>
+

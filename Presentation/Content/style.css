@@ -1,0 +1,1068 @@
+﻿body {
+    color: #424e5a;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.boxed header {
+    width: 100%
+}
+
+.boxed .wrap {
+    background: #fff;
+}
+
+
+
+/* ===[ Headings ]===
+   ==================================================
+   ================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #283043;
+    font-weight: 200;
+    margin: 0;
+    font-family: "Raleway",Arial,Helvetica;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 900;
+    margin: 0 0 44px 0;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 800;
+    margin: 0 0 22px 0;
+}
+
+h3 {
+    color: #283043;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: normal;
+    margin-bottom: 24px;
+}
+
+h4 {
+    color: #283043;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    margin: 0 0 14px 0;
+}
+
+h5 {
+    color: #283043;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    margin: 0 0 14px 0;
+}
+
+h6 {
+    color: #283043;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+    margin: 0 0 14px 0;
+}
+
+
+/* ===[ Breadcrumbs ]===
+   ==================================================
+   ================================================== */
+
+.login-page,
+.register-page {
+    background: #FAFAFA;
+    border: 1px solid #DDD;
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    /* Safari 4-5,Chrome 1-9 */ background: -webkit-gradient(linear,0% 0%,0% 100%,from(#f8f8f8),to(#fafafa));
+    ;
+    ;
+    ;
+    /* Safari 5.1,Chrome 10+*/ background: -webkit-linear-gradient(top,#f8f8f8,#fafafa);
+    ;
+    ;
+    ;
+    /* Firefox 3.6+*/ background: -moz-linear-gradient(top,#f8f8f8,#fafafa);
+    ;
+    ;
+    ;
+    /* IE 10 */ background: -ms-linear-gradient(top,#f8f8f8,#fafafa);
+    ;
+    ;
+    ;
+    /* Opera 11.10+*/ background: -o-linear-gradient(top,#f8f8f8,#fafafa);
+    ;
+    ;
+    ;
+}
+
+h2.title {
+    font-size: 26px;
+    line-height: 40px;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.breadcrumbs {
+    margin: 24px 0;
+    color: #fff;
+}
+
+    .breadcrumbs ul li {
+        display: inline-block;
+        line-height: 24px;
+        font-size: 13px;
+        color: #9e9e9e;
+        margin: 0 0 0 5px;
+        color: #fff;
+    }
+
+        .breadcrumbs ul li a {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .breadcrumbs ul li:first-child {
+            margin-left: 2px !important
+        }
+
+            .breadcrumbs ul li:nth-child(2):before,
+            .breadcrumbs ul li:first-child:before {
+                content: " ";
+                margin: 0;
+            }
+
+        .breadcrumbs ul li:before {
+            color: #fff;
+            content: "\f105";
+            font-family: FontAwesome;
+            font-size: 12px;
+            margin: 0 9px 0 0;
+        }
+
+
+/* ===[ Modal Titles ]===
+   ==================================================
+   ================================================== */
+
+.modal-header h3 {
+    color: #333;
+    text-transform: none;
+}
+
+/* ===[ Blockquote ]===
+   ==================================================
+   ================================================== */
+
+blockquote {
+    background: #fafafa;
+    font-size: 14px;
+    padding: 20px;
+}
+
+/* ===[ Paragraphs ]===
+   ==================================================
+   ================================================== */
+
+p {
+    line-height: 24px;
+    margin: 0 0 20px;
+}
+
+    p.featured {
+        font-size: 1.6em;
+        line-height: 1.5em;
+    }
+
+    p.short {
+        margin-bottom: 0
+    }
+
+    p.tall {
+        margin-bottom: 20px
+    }
+
+    p.taller {
+        margin-bottom: 40px
+    }
+
+    p .alternative-font {
+        display: inline-block;
+        margin-top: -15px;
+        position: relative;
+        top: 3px;
+        margin-bottom: -6px;
+    }
+
+/* ===[ Icons List ]===
+   ==================================================
+   ================================================== */
+
+ul.icons {
+    list-style: none
+}
+
+    ul.icons [class^="icon-"] {
+        margin-right: 5px
+    }
+
+ul.list li {
+    margin-bottom: 13px
+}
+
+.light {
+    color: #fff !important
+}
+
+.dark {
+    color: #000 !important
+}
+
+.wrap {
+    overflow: hidden
+}
+
+.page-mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #fff;
+    top: 0px;
+    left: 0px;
+    z-index: 99999;
+}
+
+.page-loader {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    margin: 23% auto 0 auto;
+    font-size: 12px;
+}
+
+.spinner {
+    border: 2px solid #eeeeee;
+    font-size: 40px;
+    width: 1em;
+    height: 1em;
+    border-radius: .5em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+img {
+    max-width: 100%
+}
+
+
+
+ul,
+li,
+ol {
+    line-height: 24px;
+    margin: 0;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+    color: #283043;
+}
+
+.btn-special,
+.btn-normal,
+.btn-small,
+.btn-large {
+    border-radius: 3px
+}
+
+/* ===[ Header ]===
+   ==================================================
+   ================================================== */
+
+#header .main-header {
+    min-height: 86px;
+    z-index: 999;
+    width: 100%;
+    position: relative;
+    background: #fff;
+    -webkit-box-shadow: 0 3px 3px -3px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 3px -3px rgba(0,0,0,0.2);
+}
+
+header .top-bar {
+    min-height: 30px;
+    background: #fafafa;
+    border-bottom: 1px solid #eee;
+    padding: 0;
+}
+
+.topnav .navbar-toggle i {
+    line-height: 20px
+}
+
+.dropdown-menu > li > a {
+    margin-right: 0
+}
+
+    .dropdown-menu > li > a:hover {
+        background: #fafafa
+    }
+
+footer .social {
+    margin-right: 4px;
+    line-height: 30px;
+    padding-left: 0;
+}
+
+header #search-form {
+    line-height: 30px
+}
+
+footer .social li:last-child,
+footer .social {
+    margin-right: 0 !important
+}
+
+
+footer .social li {
+    border-right: 1px solid #ddd;
+    display: table-cell;
+    vertical-align: middle;
+    height: 40px;
+    margin-right: 5px;
+    width: 40px;
+    text-align: center;
+    -webkit-transition: background .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out;
+    -o-transition: background .5s ease-in-out;
+    -ms-transition: background .5s ease-in-out;
+    transition: background .5s ease-in-out;
+    padding: 1px;
+}
+
+footer .social i {
+    color: #555;
+    font-size: 16px;
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
+    -ms-transition: color .5s ease-in-out;
+    transition: color .5s ease-in-out;
+}
+
+footer .social li:hover a i {
+    color: #fff
+}
+
+header .main-header {
+    display: block;
+    position: relative;
+    text-align: left;
+}
+
+.logo {
+    height: 80px
+}
+
+    .logo h1 {
+        margin: 13px 0
+    }
+
+.navbar-fixed-top {
+    position: fixed !important
+}
+
+.main-header .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+h1 i,
+h2 i,
+h3 i,
+h4 i,
+h5 i {
+    margin-right: 7px
+}
+
+.box-bg {
+    background: #FAFAFA;
+    border: 1px solid #DDD;
+    margin-bottom: 25px;
+    padding: 10px 15px;
+}
+
+
+/* ===[ Buttons ]===
+   ==================================================
+   ================================================== */
+
+.btn:hover,
+.btn:focus {
+    color: #fff
+}
+
+.input-group-btn .btn {
+    height: 62px
+}
+
+.btn-pad {
+    margin: 7px
+}
+
+.btn-default {
+    color: #555555 !important;
+    outline: 0;
+    white-space: nowrap;
+    word-wrap: normal;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+    .btn-default:hover {
+        background: -webkit-linear-gradient(#f8f8f8,#ddd);
+        background: -moz-linear-gradient(#f8f8f8,#ddd);
+        background: -o-linear-gradient(#f8f8f8,#ddd);
+        background: -ms-linear-gradient(#f8f8f8,#ddd);
+        background: linear-gradient(#f8f8f8,#ddd);
+    }
+
+.btn-color,
+.btn-default {
+    -webkit-transition: all .5s ease-in-out !important;
+    -moz-transition: all .5s ease-in-out !important;
+    -o-transition: all .5s ease-in-out !important;
+    -ms-transition: all .5s ease-in-out !important;
+    transition: all .5s ease-in-out !important;
+}
+
+.btn-color {
+    color: #fff !important
+}
+
+.btn-special {
+    background-color: #fafafa;
+    border-radius: 0px !important;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    outline: none;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+
+
+.btn-normal {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 30px;
+}
+
+.btn-small {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+
+.btn-xs,
+.btn-group-xs > .btn {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.btn-large {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 17px 50px;
+}
+
+/* ===[ Main Content ]===
+   ==================================================
+   ================================================== */
+
+#main {
+    background-color: #fff;
+    /*padding: 0 0 60px;*/
+}
+
+
+
+.border-bottom {
+    border-bottom: 1px solid #D5D5D5;
+    margin-bottom: 3px;
+}
+
+/* ===[ Main Content Boxes ]===
+   ==================================================
+   ================================================== */
+
+.main-content {
+    padding: 60px 0 0
+}
+
+.main-content {
+    margin: 45px 0 35px
+}
+
+div.content-box {
+    clear: both
+}
+
+    div.content-box div.content-box-info {
+        padding-left: 115px
+    }
+
+    div.content-box.big {
+        background: #fff;
+        -webkit-transition: background .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out;
+        -o-transition: background .5s ease-in-out;
+        -ms-transition: background .5s ease-in-out;
+        transition: background .5s ease-in-out;
+    }
+
+        div.content-box.big .ch-info-wrap {
+            margin: -40px auto 35px;
+            position: relative;
+            left: auto;
+            top: auto;
+        }
+
+        div.content-box.big:hover {
+            background: #fafafa
+        }
+
+        div.content-box.big div.content-box-info {
+            padding: 15px;
+            text-align: center;
+            margin: 0;
+        }
+
+            div.content-box.big div.content-box-info p {
+                text-align: center;
+                margin-top: 25px;
+            }
+
+
+
+.main-content h3 {
+    color: #283043;
+    line-height: 32px;
+    margin: 0 0 5px;
+}
+
+.main-content p,
+.content p {
+    text-align: left
+}
+
+/* ===[ Box border and background ]===
+   ==================================================
+   ================================================== */
+
+
+div.content-box.big {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d5d5d5;
+}
+
+
+
+/* ===[ Footer ]===
+   ==================================================
+   ================================================== */
+
+#footer {
+    margin: 0 auto;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+    #footer ul,
+    #footer li {
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+    }
+
+.footer-top {
+    border-bottom: 1px solid #414f5a;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-bottom {
+    background: #212733;
+    color: #fff;
+    line-height: 30px;
+}
+
+    .footer-bottom a {
+        color: #ccc
+    }
+
+.form-inline .input-group-btn {
+    width: 1%;
+}
+
+
+footer .social li:first-child {
+    border-left: 1px solid #414f5a
+}
+
+.social-icons-footer-bottom {
+    float: right;
+    margin: 6px 0 0;
+}
+
+    .social-icons-footer-bottom li {
+        display: inline;
+        float: left;
+        list-style: none;
+        border-right: 1px solid #414f5a !important;
+        -webkit-transition: all .2s ease-in-out 0;
+        -moz-transition: all .2s ease-in-out 0;
+        -o-transition: all .2s ease-in-out 0;
+        -ms-transition: all .2s ease-in-out 0;
+        transition: all .2s ease-in-out 0;
+    }
+
+        .social-icons-footer-bottom li i {
+            display: inline-block;
+            font-family: FontAwesome;
+            font-size: 16px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 38px;
+            padding-top: 0;
+            text-align: center;
+            text-decoration: inherit;
+            text-transform: none;
+            color: #fff;
+        }
+
+
+    
+
+.contact-us {
+    margin: 15px 0 0;  
+}
+
+.business-hour i {
+    margin-right: 5px
+}
+
+footer .contact-us a {
+    color: #fff !important
+}
+
+.contact-us .icon-map-marker {
+    font-size: 16px
+}
+
+.contact-us li i {
+    float: left;
+    margin: 4px 0 0;
+}
+
+.contact-us p {
+    line-height: 24px;
+    margin-left: 20px;
+    margin-top: -2px;
+}
+
+.contact-us li p strong {
+    float: left;
+    font-weight: 600;
+    margin: 0 5px 5px 0;
+}
+
+.contact-pad {
+    padding-bottom: 20px
+}
+
+.hero {
+    background: none repeat scroll 0 0 #FAFAFA;
+    border-left: 4px solid #DDD;
+    color: #283043;
+    font-size: 16px;
+    margin: 20px 0;
+    padding: 18px;
+}
+
+/* ===[ Common Elements ]===
+   ==================================================
+   ================================================== */
+
+.divider {
+    margin: 60px 0
+}
+
+.top-pad {
+    margin-top: 25px
+}
+
+.no-divider {
+    margin: 0
+}
+
+.bottom-pad {
+    margin-bottom: 100px
+}
+
+.bottom-pad-small {
+    margin-bottom: 50px
+}
+
+.no-bottom-pad {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* ===[ Form ]===
+   ==================================================
+   ================================================== */
+
+input.form-control,
+textarea.form-control {
+    border: 1px solid #d5d5d5 !important;
+    background: #fff !important;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    border-color: #C9C9C9;
+    -webkit-box-shadow: rgba(0,0,0,0.15) 0px 0px 8px;
+}
+
+
+#footer ul {
+    list-style: none
+}
+
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    border-color: transparent
+}
+
+.pager li > a:hover {
+    border: none
+}
+
+.menu > ul li {
+    float: none
+}
+
+.navbar-toggle {
+    border: none;
+    border-radius: 2px;
+    padding: 9px 10px 5px;
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: "Open Sans",Helvetica,Arial,sans-serif
+}
+
+strong,
+.data a {
+    font-weight: 600
+}
+.item {
+    margin-bottom: 25px
+}
+
+ol li ol.childlist,
+header nav li,
+.avatar {
+    float: left
+}
+
+
+footer a {
+    color: #fff
+}
+
+#options li a.selected,
+header .top-bar,
+header .top-bar a,
+footer .social li:hover i,
+.content-box:hover > .content-box-icon i,
+div.content-box div.content-box-icon:hover,
+div.content-box div.content-box-icon:hover i,
+#footer h3,
+.contact-box:hover h3 {
+    color: #555
+}
+
+.contact-box p {
+    text-align: center !important
+}
+
+.panel-group .panel {
+    margin-bottom: 15px
+}
+
+.panel {
+    border: 0px solid #d5d5d5
+}
+
+.panel-heading .current {
+    border: none
+}
+
+.panel-group .panel {
+    border: 1px solid #d5d5d5
+}
+
+/* ===[ Common Unique CSS ]===
+   ==================================================
+   ================================================== */
+
+.padding0-5 {
+    padding: 0.5px
+}
+
+.padding-top25 {
+    padding-top: 25px
+}
+
+.padding-top30 {
+    padding-top: 30px
+}
+
+.padding-top40 {
+    padding-top: 40px
+}
+
+.padding-top60 {
+    padding-top: 60px
+}
+
+.padding-top100 {
+    padding-top: 100px
+}
+
+.padding-bottom20 {
+    padding-bottom: 20px
+}
+
+.padding-bottom30 {
+    padding-bottom: 30px
+}
+
+.padding-bottom40 {
+    padding-bottom: 40px
+}
+
+.padding-bottom50 {
+    padding-bottom: 50px
+}
+
+.margin-topminus30 {
+    margin-top: -30px !important
+}
+
+.margin50 {
+    margin: 50px
+}
+
+.margin-top15 {
+    margin-top: 15px
+}
+
+.margin-top25 {
+    margin-top: 25px
+}
+
+.margin-top30 {
+    margin-top: 30px
+}
+
+.margin-top40 {
+    margin-top: 40px
+}
+
+.margin-top50 {
+    margin-top: 50px
+}
+
+.margin-top60 {
+    margin-top: 60px
+}
+
+.margin-top70 {
+    margin-top: 70px
+}
+
+.margin-top80 {
+    margin-top: 80px
+}
+
+.margin-top100 {
+    margin-top: 100px
+}
+
+.margin-top140 {
+    margin-top: 140px
+}
+
+.margin-bottom0 {
+    margin-bottom: 0px
+}
+
+.margin-bottom20 {
+    margin-bottom: 20px
+}
+
+.margin-bottom40 {
+    margin-bottom: 40px
+}
+
+.margin-bottom60 {
+    margin-bottom: 60px
+}
+
+.margin-bottom70 {
+    margin-bottom: 70px
+}
+
+.margin-bottom80 {
+    margin-bottom: 80px
+}
+
+.margin-bottom100 {
+    margin-bottom: 100px
+}
+
+.margin-bottom120 {
+    margin-bottom: 120px
+}
+
+.margin-bottom130 {
+    margin-bottom: 130px
+}
+
+.margin-bottom140 {
+    margin-bottom: 140px
+}
+
+.margin-bottom160 {
+    margin-bottom: 160px
+}
+
+.margin-bottom200 {
+    margin-bottom: 200px
+}
+
+
+/* ===[ Modal ]===
+   ================================================== */
+
+.login .modal-dialog,
+.register .modal-dialog {
+    margin: 30px auto;
+    width: 450px;
+}
+
+.login .modal-header,
+.register .modal-header {
+    border-radius: 5px 5px 0 0;
+    border: 0;
+    color: #fff;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 15px;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.login .modal-body,
+.register .modal-body {
+    padding: 20px 20px 0
+}
+
+
+/*validation summary correction*/
+
+.validation-summary-valid {
+    display: none;
+}

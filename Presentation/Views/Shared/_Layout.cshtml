@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Demographic Data Manager</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,700,800,900' rel='stylesheet' type='text/css'>
+
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/bundles/datepicker/css")
+    @if (IsSectionDefined("Styles"))
+    {@RenderSection("Styles", required: false)}
+</head>
+<body class="home">
+
+    <div class="wrap">
+        <header id="header">
+            @Html.Partial("_Header")
+        </header>
+
+
+        <!-- Main view  -->
+        <section id="main">
+            @RenderBody()
+
+        </section>
+
+        <!-- Footer-->
+        <footer id="footer">
+            @Html.Partial("_Footer")
+        </footer>
+
+
+
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/datepicker/js")
+    @Scripts.Render("~/bundles/moment/js")
+    @RenderSection("scripts", required: false)
+
+    <script>
+
+        // Jquery Datepicker added to Date of Birth field
+
+        $(document).ready(function () {
+            $(".dob").datepicker({
+                dateFormat: "mm/dd/yyyy",
+                todayHighlight: true
+            }).on('changeDate', function (ev) {
+                $(this).datepicker('hide');
+            });
+        });
+
+
+        // Jquery mask added to HomePhone and MobilePhone fields
+        jQuery(function ($) {
+            $(".dob").mask("99/99/9999");
+            $(".phone").mask("(999) 999-9999");
+        });
+    </script>
+
+
+</body>
+</html>

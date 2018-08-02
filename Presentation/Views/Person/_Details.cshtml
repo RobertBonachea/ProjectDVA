@@ -1,0 +1,133 @@
+﻿@model Domain.Entities.Person
+
+
+
+<div class="modal-header">
+    <a aria-hidden="true" data-dismiss="modal" class="close" href="#"><span>×</span></a>
+
+    <h4 class="modal-title">Demographic Data Manager</h4>
+    <small class="font-bold">@Html.DisplayFor(model => model.FirstName) @Html.DisplayFor(model => model.LastName)</small>
+</div>
+
+    <div class="modal-body">
+
+
+        <fieldset>
+            <legend>Profile Information</legend>
+
+            <dl class="dl-horizontal">
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.FirstName)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.FirstName)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.LastName)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.LastName)
+                </dd>
+
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.HomePhone)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.HomePhone)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.MobilePhone)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.MobilePhone)
+                </dd>
+
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Email)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Email)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.DateOfBirth)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.DateOfBirth)
+                </dd>
+
+            </dl>
+
+
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Address Information</legend>
+
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Address.Address1)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Address.Address1)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Address.Address2)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Address.Address2)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Address.City)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Address.City)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Address.State)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Address.State)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Address.Zipcode)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Address.Zipcode)
+                </dd>
+
+
+
+            </dl>
+        </fieldset>
+
+
+    </div>
+
+    <div class="modal-footer">
+
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+    </div>
+
+
+
